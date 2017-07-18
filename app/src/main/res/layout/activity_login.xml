@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mirmahfuz.simpleblog.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:padding="20dp">
+
+
+        <EditText
+            android:id="@+id/loginEmailfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:ems="10"
+            android:hint="Email. . . "
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/loginpasswprdField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/loginEmailfield"
+            android:layout_alignStart="@+id/loginEmailfield"
+            android:layout_below="@+id/loginEmailfield"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:hint="Password. . . "
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="79dp"
+            android:text="Log In "
+            android:layout_below="@+id/loginpasswprdField"
+            android:layout_centerHorizontal="true" />
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/googleBtn"
+            android:layout_below="@+id/loginbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+        </com.google.android.gms.common.SignInButton>
+
+        <Button
+            android:id="@+id/loginRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="56dp"
+            android:text="Need a New account .." />
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
